@@ -22,6 +22,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 <div class="flourish-embed flourish-table" data-src="visualisation/4869630"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
+### intégration card animé par flourish
+
+<div class="flourish-embed flourish-cards" data-src="visualisation/1089852"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
