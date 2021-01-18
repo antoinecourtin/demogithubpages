@@ -25,26 +25,17 @@ PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX psv: <http://www.wikidata.org/prop/statement/value/>
 PREFIX p: <http://www.wikidata.org/prop/>
 PREFIX schema: <http://schema.org/>
-SELECT distinct ?dept ?deptLabel ?lat ?lon ?fromage ?fromageLabel ?article ?img WHERE {
+SELECT distinct ?dept ?deptLabel ?fromage ?fromageLabel ?img WHERE {
  ?fromage wdt:P279 wd:Q2223649 .
  ?fromage wdt:P1071 ?dept .
  ?dept wdt:P31 wd:Q6465 .
  ?dept p:P625 ?loc .
- ?loc psv:P625 ?coord .
- ?coord wikibase:geoLatitude ?lat .
- ?coord wikibase:geoLongitude ?lon .
  ?fromage wdt:P18 ?img .
- OPTIONAL {
- ?article schema:about ?fromage .
- ?article schema:inLanguage "fr" .
- FILTER (SUBSTR(str(?article), 1, 25) = "https://fr.wikipedia.org/")
- }
- 
+
  SERVICE wikibase:label {
  bd:serviceParam wikibase:language "fr" 
  }
 }
-ORDER BY ?deptLabel 
 ```
 
 > attention, il s'agit pas du même jeu de données
