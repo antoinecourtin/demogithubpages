@@ -37,6 +37,26 @@ SELECT distinct ?dept ?deptLabel ?fromage ?fromageLabel ?img WHERE {
  }
 }
 ```
+## Test requeête wikidata
+Mon 1ert exo sur Monet
+
+```sparql
+#Tableaux de Rembrandt du musée du Louvre ou du Rijkmuseum
+#defaultView:ImageGrid
+
+SELECT DISTINCT ?item ?itemLabel ?itemDescription ?image ?collection WHERE {
+    ?item wdt:P31 wd:Q3305213 ; # Get items that are instances of painting
+          wdt:P170 wd:Q5598 ; # By creator Rembrandt
+          wdt:P195/wdt:P361* ?collection . # That are in some collection
+
+    # Only return results where 'collection' is either Rijkmuseum or Louvre
+    FILTER ( ?collection = wd:Q190804 || ?collection = wd:Q19675 )
+ 
+    OPTIONAL { ?item wdt:P18 ?image } # Optionally with an image
+
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
+}
+```
 
 > attention, il s'agit pas du même jeu de données
 
