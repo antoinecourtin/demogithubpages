@@ -5,7 +5,6 @@
 >  juste les peintures de monet
 
 ````sparql
-#1er: juste les peintures de monet 
 SELECT ?item 
 WHERE
 {
