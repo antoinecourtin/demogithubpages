@@ -4,7 +4,7 @@
 
 >  juste les peintures de monet
 
-````sparql
+````sparql 
 SELECT ?item 
 WHERE
 {
