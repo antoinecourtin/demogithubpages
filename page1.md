@@ -18,8 +18,7 @@ Le jeu de données est disponible [ici](https://data.opendatasoft.com/explore/da
 
 ### Autre type de graphique 
 
-<iframe src="https://data.opendatasoft.com/chart/embed/eer/?&static=false&datasetcard=true" width="800" height="900" frameborder="0"></iframe>
-
+<iframe src="https://data.opendatasoft.com/chart/embed/eer/?&static=false&datasetcard=false" width="800" height="950" frameborder="0"></iframe>
 ### Et ils sont beau ces fromages ?
 
 Grâce à petite requête wikidata, on peut voir ces fameux fromage
