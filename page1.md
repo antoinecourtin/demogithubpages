@@ -15,6 +15,11 @@ Le jeu de données est disponible [ici](https://data.opendatasoft.com/explore/da
 
 > on voit tout de suite un soucis dans les données avec vache**s**
 
+
+### Autre type de graphique 
+
+<iframe src="https://data.opendatasoft.com/chart/embed/eer/?&static=false&datasetcard=true" width="800" height="600" frameborder="0"></iframe>
+
 ### Et ils sont beau ces fromages ?
 
 Grâce à petite requête wikidata, on peut voir ces fameux fromage
