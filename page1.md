@@ -18,7 +18,7 @@ Le jeu de données est disponible [ici](https://data.opendatasoft.com/explore/da
 
 ### Autre type de graphique 
 
-<iframe src="https://data.opendatasoft.com/chart/embed/eer/?&static=false&datasetcard=true" width="800" height="600" frameborder="0"></iframe>
+<iframe src="https://data.opendatasoft.com/chart/embed/eer/?&static=false&datasetcard=true" width="800" height="900" frameborder="0"></iframe>
 
 ### Et ils sont beau ces fromages ?
 
@@ -43,4 +43,4 @@ SELECT distinct ?dept ?deptLabel ?fromage ?fromageLabel ?img WHERE {
  }
 }
 ```
-<iframe style="width: 80vw; height: 4600vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AImageGrid%0APREFIX%20wd%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fentity%2F%3E%0APREFIX%20wdt%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F%3E%0APREFIX%20wikibase%3A%20%3Chttp%3A%2F%2Fwikiba.se%2Fontology%23%3E%0APREFIX%20psv%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fstatement%2Fvalue%2F%3E%0APREFIX%20p%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2F%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0ASELECT%20distinct%20%3Fdept%20%3FdeptLabel%20%3Ffromage%20%3FfromageLabel%20%3Fimg%20WHERE%20%7B%0A%20%3Ffromage%20wdt%3AP279%20wd%3AQ2223649%20.%0A%20%3Ffromage%20wdt%3AP1071%20%3Fdept%20.%0A%20%3Fdept%20wdt%3AP31%20wd%3AQ6465%20.%0A%20%3Fdept%20p%3AP625%20%3Floc%20.%0A%20%3Ffromage%20wdt%3AP18%20%3Fimg%20.%0A%0A%20SERVICE%20wikibase%3Alabel%20%7B%0A%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22%20%0A%20%7D%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 70vw; height: 4600vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AImageGrid%0APREFIX%20wd%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fentity%2F%3E%0APREFIX%20wdt%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F%3E%0APREFIX%20wikibase%3A%20%3Chttp%3A%2F%2Fwikiba.se%2Fontology%23%3E%0APREFIX%20psv%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fstatement%2Fvalue%2F%3E%0APREFIX%20p%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2F%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0ASELECT%20distinct%20%3Fdept%20%3FdeptLabel%20%3Ffromage%20%3FfromageLabel%20%3Fimg%20WHERE%20%7B%0A%20%3Ffromage%20wdt%3AP279%20wd%3AQ2223649%20.%0A%20%3Ffromage%20wdt%3AP1071%20%3Fdept%20.%0A%20%3Fdept%20wdt%3AP31%20wd%3AQ6465%20.%0A%20%3Fdept%20p%3AP625%20%3Floc%20.%0A%20%3Ffromage%20wdt%3AP18%20%3Fimg%20.%0A%0A%20SERVICE%20wikibase%3Alabel%20%7B%0A%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22%20%0A%20%7D%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
