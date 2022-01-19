@@ -6,22 +6,22 @@
 #### Requête
 
 ````sparql
-#ceci est une fausse requête
-SELECT ?item ?itemLabel ?itemdescription ?itemdescriptionEN ?image ?lieuconservation ?lieuconservationLabel ?lieuconservationCoord
+#defaultView:Map
+SELECT ?item ?itemLabel ?lieuconservation ?lieuconservationLabel ?lieuconservationCoord ?datecreation
 WHERE
 {
-  ?item wdt:P31 wd:Q3305213 .
-  ?item wdt:P170 wd:Q296 .
-  OPTIONAL {
-    ?item wdt:P18 ?image.
+  ?item wdt:P31 wd:Q860861 .
+  ?item wdt:P170 wd:Q30755 .
+  ?item wdt:P571 ?datecreation.
+   FILTER (?datecreation <= "1900"^^xsd:dateTime)
 
-}
-  ?item schema:description ?itemdescription.
-  FILTER(LANG(?itemdescription) = "fr")
-    ?item schema:description ?itemdescriptionEN.
-  FILTER(LANG(?itemdescriptionEN) = "en")
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "fr,en". }
-}
+   ?item wdt:P276 ?lieuconservation .
+    ?lieuconservation wdt:P17 wd:Q30.
+    ?lieuconservation wdt:P625 ?lieuconservationCoord.
+
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+
+  }
 ````
 
 #### Résultats
