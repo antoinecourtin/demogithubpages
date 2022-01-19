@@ -19,7 +19,7 @@ WHERE
 ### 2ème requête
 
 > avec en + le texte de description en Fr et en anglais
-> 
+
 ````sparql
 SELECT ?item ?itemdescription ?itemdescriptionEN
 WHERE
