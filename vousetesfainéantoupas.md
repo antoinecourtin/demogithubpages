@@ -13,16 +13,14 @@ WHERE
   ?item wdt:P31 wd:Q860861 .
   ?item wdt:P170 wd:Q30755 .
   ?item wdt:P571 ?datecreation.
-   FILTER (?datecreation <= "1900"^^xsd:dateTime)
 
    ?item wdt:P276 ?lieuconservation .
-    { ?lieuconservation wdt:P17 wd:Q30. } UNION { ?lieuconservation wdt:P17 wd:Q142. }
+   ?lieuconservation wdt:P17 wd:Q30. 
     ?lieuconservation wdt:P625 ?lieuconservationCoord.
 
     SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 
   }
-
 ````
 
 #### Résultats
