@@ -75,3 +75,26 @@ WHERE
 
 ````
 
+#### Requête 4
+````sparql
+#defaultView:Map{"layer": "?materiauxLabel"}
+SELECT ?item ?itemLabel ?lieuconservation ?lieuconservationLabel ?lieuconservationCoord ?datecreation ?materiauxLabel
+WHERE
+{
+  ?item wdt:P31 wd:Q860861 .
+  ?item wdt:P170 wd:Q30755 .
+  ?item wdt:P571 ?datecreation.
+  ?item wdt:P186 ?materiaux. 
+   FILTER (?datecreation <= "1900"^^xsd:dateTime)
+
+   ?item wdt:P276 ?lieuconservation .
+    { ?lieuconservation wdt:P17 wd:Q30. } UNION { ?lieuconservation wdt:P17 wd:Q142. }
+    ?lieuconservation wdt:P625 ?lieuconservationCoord.
+
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". }
+
+  }
+
+````
+
+
