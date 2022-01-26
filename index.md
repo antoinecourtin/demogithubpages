@@ -22,8 +22,82 @@ WHERE
 
   }
 ````
-<iframe style="width: 67vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0ASELECT%20%3Fitem%20%3FitemLabel%20%3Flieuconservation%20%3FlieuconservationLabel%20%3FlieuconservationCoord%20%3Fdatecreation%0AWHERE%0A%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ860861%20.%0A%20%20%3Fitem%20wdt%3AP170%20wd%3AQ30755%20.%0A%20%20%3Fitem%20wdt%3AP571%20%3Fdatecreation.%0A%0A%20%20%20%3Fitem%20wdt%3AP276%20%3Flieuconservation%20.%0A%20%20%20%3Flieuconservation%20wdt%3AP17%20wd%3AQ30.%20%0A%20%20%20%20%3Flieuconservation%20wdt%3AP625%20%3FlieuconservationCoord.%0A%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%0A%20%20%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
+#### Requête 2
 
-### Bel example avec rawographe
-![alt text](https://raw.githubusercontent.com/antoinecourtin/demogithubpages/main/viz%20(1).png)
+````sparql
+#defaultView:Map
+SELECT ?item ?itemLabel ?lieuconservation ?lieuconservationLabel ?lieuconservationCoord ?datecreation
+WHERE
+{
+  ?item wdt:P31 wd:Q860861 .
+  ?item wdt:P170 wd:Q30755 .
+  ?item wdt:P571 ?datecreation.
+   FILTER (?datecreation <= "1900"^^xsd:dateTime)
+
+   ?item wdt:P276 ?lieuconservation .
+   ?lieuconservation wdt:P17 wd:Q30. 
+    ?lieuconservation wdt:P625 ?lieuconservationCoord.
+
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+
+  }
+
+````
+
+#### Requête 3
+````sparql
+#defaultView:Map
+SELECT ?item ?itemLabel ?lieuconservation ?lieuconservationLabel ?lieuconservationCoord ?datecreation
+WHERE
+{
+  ?item wdt:P31 wd:Q860861 .
+  ?item wdt:P170 wd:Q30755 .
+  ?item wdt:P571 ?datecreation.
+   FILTER (?datecreation <= "1900"^^xsd:dateTime)
+
+   ?item wdt:P276 ?lieuconservation .
+    { ?lieuconservation wdt:P17 wd:Q30. } UNION { ?lieuconservation wdt:P17 wd:Q142. }
+    ?lieuconservation wdt:P625 ?lieuconservationCoord.
+
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+
+  }
+
+````
+
+#### Requête 4
+````sparql
+#defaultView:Map{"layer": "?materiauxLabel"}
+SELECT ?item ?itemLabel ?lieuconservation ?lieuconservationLabel ?lieuconservationCoord ?datecreation ?materiauxLabel
+WHERE
+{
+  ?item wdt:P31 wd:Q860861 .
+  ?item wdt:P170 wd:Q30755 .
+  ?item wdt:P571 ?datecreation.
+  ?item wdt:P186 ?materiaux. 
+   FILTER (?datecreation <= "1900"^^xsd:dateTime)
+
+   ?item wdt:P276 ?lieuconservation .
+    { ?lieuconservation wdt:P17 wd:Q30. } UNION { ?lieuconservation wdt:P17 wd:Q142. }
+    ?lieuconservation wdt:P625 ?lieuconservationCoord.
+
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". }
+
+  }
+
+````
+
+Requête 5
+
+````sparql
+SELECT ?item ?itemLabel ?createurLabel WHERE {
+  ?item wdt:P31/wdt:P279* wd:Q3305213.
+  ?item wdt:P276 wd:Q23402.
+  ?item wdt:P170 ?createur.
+  FILTER NOT EXISTS {?createur wdt:P27 wd:Q142. }
+
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+````
+
