@@ -1,15 +1,15 @@
 {
   "@id" : "https:iiif.mediatheque.epmoo.fr/manifest/objet/15524", 
-  "_id_commentaire" :"prendre l'id TMS (n° fiche) pour construire l'url "
+  "_id_commentaire" :"prendre l'id TMS (n° fiche) pour construire l'url ",
   "@type" : "sc:Manifest",
-  "@context" : "http://iiif.io/api/presentation/3/context.json"
-  "_@type_commentaire" :""
+  "@context" : "http://iiif.io/api/presentation/3/context.json",
+  "_@type_commentaire" :"",
   "label" : "Toy, boston-terrier",
   "_label_commentaire" : "Titre de l'oeuvre id=43",
   "attribution" : "Etablissement public du Musée d'Orsay et du musée de l'Orangerie - Valerie Giscard d'Estaing",
-  "_attribution_commentaire" : "Valeur fixe "
-  "requiredStatement" : "RMN-Grand Palais (Musée d’Orsay)  / Tony Querro" , 
-  "_requiredStatement_commentaire	" : "concaténation de Crédit photographique + Photographe. WARNING il faut mettre ici toutes les variables existants pour les X images d'un même id TMS, séparpées par des ;"
+  "_attribution_commentaire" : "Valeur fixe ",
+  "requiredStatement" : "RMN-Grand Palais (Musée d’Orsay),Tony Querro", 
+  "_requiredStatement_commentaire" : "concaténation de Crédit photographique + Photographe. WARNING il faut mettre ici toutes les variables existants pour les X images d'un même id TMS, séparpées par des ;",
   "license" : "",
   "_licence_commentaire" : "valeur fixe : lien vers page web du site à créer",
   "logo" : "https://www.epmo-musees.fr/themes/ep/logo.svg",
@@ -19,7 +19,8 @@
   "seeAlso" : [ "" ],
   "description" : "Pompon, François, Toy, boston-terrier. Epreuve en plâtre patiné. Entre 1930 et 1932. Legs François Pompon, 1933. ",
   "_description_commentaire" : "concaténation de : Artiste de l'oeuvre + Titre + Désignation de l'oeuvre + Date + Mention d'acquisition ",
-  "metadata" : [ {
+  "metadata" : 
+  [ {
     "label" : "Repository",
     "value" : "Etablissement public du Musée d'Orsay et du musée de l'Orangerie - Valerie Giscard d'Estaing",
     "_repository_commentaire" :"valeure fixe"
@@ -29,28 +30,25 @@
     "_digitisedBy_commentaire" : "valeur de Source. WARNING il faut mettre ici toutes les variables existances pour les X images d'un même id TMS, séparpées par des ; "
   }, {
     "label" : "Source Images",
-    "value" : "https://cdn.mediatheque.epmoo.fr/link/fzn189jpu69bsw0.jpg"
+    "value" : "https://cdn.mediatheque.epmoo.fr/link/fzn189jpu69bsw0.jpg",
     "_sourceImages" : "l'url publique de l'image sur le cdn ? pas sur du tout de moi"
   }, {
     "label" : "Metadata Source",
-    "value" : "https://www.musee-orsay.fr/fr/oeuvres/15524"
-    "_metadataSource_commentaire" :"on considère la notice web comme la source car elle est alimenté par la même source à savoir TMS"
-  }, 
-  "rendering": {
+    "value" : "https://www.musee-orsay.fr/fr/oeuvres/15524",
+    "metadataSource_commentaire" :"on considère la notice web comme la source car elle est alimenté par la même source à savoir TMS"
+  }, {
+  "rendering" : {
     "@id": "https://www.musee-orsay.fr/fr/oeuvres/15524",
-    "format": "text/html",
-    "label": "Full record view"
-  }
-  {
+    "format" : "text/html",
+    "label" : "Full record view"
+  }}, {       
     "label" : "Id Metadata Source",
-    "value" : "15524"
+    "value" : "15524",
     "_metadataSource_commentaire" :"juste l'id TMS, je me dis que ca peut ne pas être inutile de l'isoler"
-
-  }, 
-  {
+  }, {
     "label" : "Shelfmark",
-    "value" : "EPMO - Musée d'Orsay "
-    "_shelfmark_commentaire" : "valeur fixe (EPMO) suivit de - suivi de la valeur de Organisme responsable/Propriétaire"
+    "value" : "EPMO - Musée d'Orsay ",
+    "shelfmark_commentaire" : "valeur fixe (EPMO) suivit de - suivi de la valeur de Organisme responsable/Propriétaire"
   }, {
     "label" : "Title",
     "value" : "Toy, boston-terrier",
@@ -78,30 +76,29 @@
   }, {
     "label" : "Format",
     "value" : [ {
-      "@value" : "Epreuve en plâte patiné ; H. 30,9 ; L. 15,3 ; P. 32,5 cm. "
-      "format_commentaire":"valeure de Désignation de l'oeuvre ; Dimensions de l'oeuvre",
+      "@value" : "Epreuve en plâte patiné ; H. 30,9 ; L. 15,3 ; P. 32,5 cm. ",
+      "format_commentaire":"valeure de Désignation de l'oeuvre ; Dimensions de l'oeuvre"
     }, {
       "@value" : "image/jpeg"
     }, {
       "@value" : "Nombre total de vues :  2",
-      "_commentaire" :"Valeure fixe Nombre total de vues : $calcul de nombre d'image pour un même id TMS et bien sur qui ont Oui dans Diffusion publique autorisée",
-    } ]
-  },  {
+      "_commentaire":"Valeure fixe Nombre total de vues : $calcul de nombre d'image pour un même id TMS et bien sur qui ont Oui dans Diffusion publique autorisée"
+    }]},
+   {
     "label" : "Dimensions",
     "value" : "H. 30,9 ; L. 15,3 ; P. 32,5 cm.",
     "_title_commentaire" :"Dimensions de l'oeuvre"
-  }
-  
-  
+  },
   {
     "label" : "Relation",
-    "value" : "Online Collection : https://www.musee-orsay.fr/fr/oeuvres/15524 "
+    "value" : "Online Collection : https://www.musee-orsay.fr/fr/oeuvres/15524 ",
     "_relation_commentaire" : "valeur fixe Online Collection : https://www.musee-orsay.fr/fr/oeuvres/ + N° de la fiche"
   }, {
     "label" : "Type",
-    "value" : "Sculpture"
-    "_type_commentaire" : "Type d'oeuvre"
-  } ],
+    "value" : "Sculpture",
+    "type_commentaire" : "Type d'oeuvre"
+  } 
+  ],
   "sequences": [
     {
       "@id": "https://iiif.mediatheque.epmoo.fr/manifest/object/15524/sequence/normal",
@@ -109,7 +106,7 @@
       "canvases": [
         {
           "@id": "https://iiif.mediatheque.epmoo.fr/manifest/object/15524/canvas/canvas-00157073",
-          "_id_canvas_commentaire" :"l'ulr de base + idTMS (= n° de la fiche) + canvas/-canv + identifiantimageephoto"
+          "_id_canvas_commentaire" :"l'ulr de base + idTMS (= n° de la fiche) + canvas/-canv + identifiantimageephoto",
           "@type": "sc:Canvas",
           "height": 2450,
           "requiredStatement": {
@@ -201,4 +198,6 @@
       "profile": "http://iiif.io/api/image/2/level2.json"
     }
   }
+  }
+]
 }
