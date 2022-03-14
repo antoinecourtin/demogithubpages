@@ -2,7 +2,7 @@
   "@id" : "https:iiif.mediatheque.epmoo.fr/manifest/objet/15524", 
   "_id_commentaire" :"prendre l'id TMS (n° fiche) pour construire l'url ",
   "@type" : "sc:Manifest",
-  "@context" : "http://iiif.io/api/presentation/3/context.json",
+  "@context" : "http://iiif.io/api/presentation/2/context.json",
   "_@type_commentaire" :"",
   "label" : "Toy, boston-terrier",
   "_label_commentaire" : "Titre de l'oeuvre id=43",
