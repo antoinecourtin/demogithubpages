@@ -1,0 +1,204 @@
+{
+  "@id" : "https:iiif.mediatheque.epmoo.fr/manifest/objet/15524", 
+  "_id_commentaire" :"prendre l'id TMS (n° fiche) pour construire l'url "
+  "@type" : "sc:Manifest",
+  "@context" : "http://iiif.io/api/presentation/3/context.json"
+  "_@type_commentaire" :""
+  "label" : "Toy, boston-terrier",
+  "_label_commentaire" : "Titre de l'oeuvre id=43",
+  "attribution" : "Etablissement public du Musée d'Orsay et du musée de l'Orangerie - Valerie Giscard d'Estaing",
+  "_attribution_commentaire" : "Valeur fixe "
+  "requiredStatement" : "RMN-Grand Palais (Musée d’Orsay)  / Tony Querro" , 
+  "_requiredStatement_commentaire	" : "concaténation de Crédit photographique + Photographe. WARNING il faut mettre ici toutes les variables existants pour les X images d'un même id TMS, séparpées par des ;"
+  "license" : "",
+  "_licence_commentaire" : "valeur fixe : lien vers page web du site à créer",
+  "logo" : "https://www.epmo-musees.fr/themes/ep/logo.svg",
+  "_logo_commentaire" : "logo de l'EPMO",
+  "related" : "https://www.musee-orsay.fr/fr/oeuvres/15524",
+  "_related_commentaire" : "lien url de la notice TMS sur le site web qui se contruit avec https://www.musee-orsay.fr/fr/oeuvres/ + N° Fiche oeuvre ",
+  "seeAlso" : [ "" ],
+  "description" : "Pompon, François, Toy, boston-terrier. Epreuve en plâtre patiné. Entre 1930 et 1932. Legs François Pompon, 1933. ",
+  "_description_commentaire" : "concaténation de : Artiste de l'oeuvre + Titre + Désignation de l'oeuvre + Date + Mention d'acquisition ",
+  "metadata" : [ {
+    "label" : "Repository",
+    "value" : "Etablissement public du Musée d'Orsay et du musée de l'Orangerie - Valerie Giscard d'Estaing",
+    "_repository_commentaire" :"valeure fixe"
+  }, {
+    "label" : "Digitised by",
+    "value" : "RMN",
+    "_digitisedBy_commentaire" : "valeur de Source. WARNING il faut mettre ici toutes les variables existances pour les X images d'un même id TMS, séparpées par des ; "
+  }, {
+    "label" : "Source Images",
+    "value" : "https://cdn.mediatheque.epmoo.fr/link/fzn189jpu69bsw0.jpg"
+    "_sourceImages" : "l'url publique de l'image sur le cdn ? pas sur du tout de moi"
+  }, {
+    "label" : "Metadata Source",
+    "value" : "https://www.musee-orsay.fr/fr/oeuvres/15524"
+    "_metadataSource_commentaire" :"on considère la notice web comme la source car elle est alimenté par la même source à savoir TMS"
+  }, 
+  "rendering": {
+    "@id": "https://www.musee-orsay.fr/fr/oeuvres/15524",
+    "format": "text/html",
+    "label": "Full record view"
+  }
+  {
+    "label" : "Id Metadata Source",
+    "value" : "15524"
+    "_metadataSource_commentaire" :"juste l'id TMS, je me dis que ca peut ne pas être inutile de l'isoler"
+
+  }, 
+  {
+    "label" : "Shelfmark",
+    "value" : "EPMO - Musée d'Orsay "
+    "_shelfmark_commentaire" : "valeur fixe (EPMO) suivit de - suivi de la valeur de Organisme responsable/Propriétaire"
+  }, {
+    "label" : "Title",
+    "value" : "Toy, boston-terrier",
+    "_title_commentaire" :"valeur de Titre"
+  }, {
+    "label" : "Object Number",
+    "value" : "RF 3784",
+    "_title_commentaire" :"valeur de N° Inventaire"
+  },{
+    "label" : "People",
+    "value" : "Pompon, François",
+    "_title_commentaire" :"Valeur de Artistes de l'oeuvre"
+  },
+  {
+    "label" : "Date",
+    "value" : "Entre 1930 et 1932",
+    "_title_commentaire" :"Valeur de Date"
+  }, {
+    "label" : "provenance",
+    "value" : "Legs de François Pompon, 1933",
+    "_title_commentaire" :"valeur de Mention d'acquisition"
+  }, {
+    "label" : "Language",
+    "value" : "Sans contenu linguistique"
+  }, {
+    "label" : "Format",
+    "value" : [ {
+      "@value" : "Epreuve en plâte patiné ; H. 30,9 ; L. 15,3 ; P. 32,5 cm. "
+      "format_commentaire":"valeure de Désignation de l'oeuvre ; Dimensions de l'oeuvre",
+    }, {
+      "@value" : "image/jpeg"
+    }, {
+      "@value" : "Nombre total de vues :  2",
+      "_commentaire" :"Valeure fixe Nombre total de vues : $calcul de nombre d'image pour un même id TMS et bien sur qui ont Oui dans Diffusion publique autorisée",
+    } ]
+  },  {
+    "label" : "Dimensions",
+    "value" : "H. 30,9 ; L. 15,3 ; P. 32,5 cm.",
+    "_title_commentaire" :"Dimensions de l'oeuvre"
+  }
+  
+  
+  {
+    "label" : "Relation",
+    "value" : "Online Collection : https://www.musee-orsay.fr/fr/oeuvres/15524 "
+    "_relation_commentaire" : "valeur fixe Online Collection : https://www.musee-orsay.fr/fr/oeuvres/ + N° de la fiche"
+  }, {
+    "label" : "Type",
+    "value" : "Sculpture"
+    "_type_commentaire" : "Type d'oeuvre"
+  } ],
+  "sequences": [
+    {
+      "@id": "https://iiif.mediatheque.epmoo.fr/manifest/object/15524/sequence/normal",
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "https://iiif.mediatheque.epmoo.fr/manifest/object/15524/canvas/canvas-00157073",
+          "_id_canvas_commentaire" :"l'ulr de base + idTMS (= n° de la fiche) + canvas/-canv + identifiantimageephoto"
+          "@type": "sc:Canvas",
+          "height": 2450,
+          "requiredStatement": {
+            "label": { "fr": [ "Attribution" ] },
+            "value": { "fr": [ "RMN-Grand Palais (Musée d’Orsay) / Tony Querro" ] }
+            } ,
+          "metadata" : [ {
+             "label" : "Qualificatif",
+             "value" : "3/4 gauche ",
+            "_repository_commentaire" :"valeur de Qualificatif propre à chaque image"
+            }],
+          "images": [
+            {
+              "@id": "https://iiif.mediatheque.epmoo.fr/manifest/object/15524/annotation/anno-00157073",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://iiif.mediatheque.epmoo.fr/manifest/object/15524/canvas/canvas-00157073",
+              "resource": {
+                "@id": " https://mediatheque.epmoo.fr/iiif/00157073/full/full/0/default.jpg ",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "height": 2450,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://mediatheque.epmoo.fr/iiif/00157073",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                },
+                "width": 1549
+              }
+            }
+          ],
+          "label": "1",
+          "otherContent": [
+            {
+              "@id": "https://iiif.mediatheque.epmoo.fr/manifest/object/15524/list/00157073",
+              "@type": "sc:AnnotationList"
+            }
+          ],
+          "width": 1549
+        },
+        {
+          "@id": "https://iiif.mediatheque.epmoo.fr/manifest/object/15524/canvas/canvas-00157074",
+          "@type": "sc:Canvas",
+          "height": 2450,
+          "requiredStatement": {
+            "label": { "fr": [ "Attribution" ] },
+            "value": { "fr": [ "RMN-Grand Palais (Musée d’Orsay) / Tony Querro" ] }
+            },
+          "metadata" : [ {
+             "label" : "Qualificatif",
+             "value" : "Face",
+            "_repository_commentaire" :"valeur de Qualificatif propre à chaque image"
+            }],
+          "images": [
+            {
+              "@id": "https://iiif.mediatheque.epmoo.fr/manifest/object/15524/annotation/anno-00157074",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "on": "https://iiif.mediatheque.epmoo.fr/manifest/object/15524/canvas/canvas-00157074",
+              "resource": {
+                "@id": " https://mediatheque.epmoo.fr/iiif/00157074/full/full/0/default.jpg ",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "height": 2450,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://mediatheque.epmoo.fr/iiif/00157074",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                },
+                "width": 1549
+              }
+            }
+          ],
+          "label": "1",
+          "otherContent": [
+            {
+              "@id": "https://iiif.mediatheque.epmoo.fr/manifest/object/15524/list/00157074",
+              "@type": "sc:AnnotationList"
+            }
+          ],
+          "width": 1549
+        }
+  ],
+  "thumbnail": {
+    "@id": "https://iiif.mediatheque.epmoo.fr/manifest/object/15524/list/00157073/full/!170,170/0/default.jpg",
+    "service": {
+      "@context": "http://iiif.io/api/image/2/context.json",
+      "@id": "https://mediatheque.epmoo.fr/iiif/00157074",
+      "profile": "http://iiif.io/api/image/2/level2.json"
+    }
+  }
+}
