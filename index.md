@@ -90,16 +90,5 @@ WHERE
 
 ````
 
-Requête 5
 
-````sparql
-SELECT ?item ?itemLabel ?createurLabel WHERE {
-  ?item wdt:P31/wdt:P279* wd:Q3305213.
-  ?item wdt:P276 wd:Q23402.
-  ?item wdt:P170 ?createur.
-  FILTER NOT EXISTS {?createur wdt:P27 wd:Q142. }
-
-    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-}
-````
 
