@@ -3,7 +3,7 @@
 >  exercice : afficher dans une page markdown d'un répertoire github, la requête SPARQL ainsi que le résultat de la requête sous forme d'une carte 
 >  la requête : toutes les sculptures de Rodin conservé dans un musée américain
 
-```
+
 
 #### Requête 1
 
